@@ -9,28 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.0/socket.io.js"></script>
-    <script type="text/javascript">
-        var socket = io.connect('https://' + document.domain + ':' + location.port);
-        socket.on('connect', function () {
-            console.log("Connected to Socket.IO");
-        });
-
-        function handleClick() {
-            socket.emit('button_click', { message: 'Trigger button clicked' });
-        }
-
-        socket.on('result', function (data) {
-            // Handle the result received from the server
-            var result = data.result;
-            alert('True action happened on the other device!');
-        });
-    </script>
 </head>
 
 <body>
-    <button id="actionButton">Trigger Action</button>
-    <!--script src="{{ url_for('static', filename='js/scripts.js') }}"></script-->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </body>
 
