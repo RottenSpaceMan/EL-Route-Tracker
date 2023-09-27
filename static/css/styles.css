@@ -1,23 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 .topbar {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 7px;
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: large;
+    z-index: 10;
 }
 
 .left nav {
-    display: inline; /* or display: inline-block; */
-    margin-right: 25px; /* Adjust the margin as needed */
+    display: inline;
+    margin-right: 15px;
+    margin-left: 10px;
 }
 
 nav {
     margin-right: 0px;
+}
+.base {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.wallpaperscraft.com/image/single/mountains_mountain_range_peaks_149574_1280x720.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.pane {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
+}
+/* Style the tab container (parent of .bus-route) */
+.bus-container {
+    height: 100vh; /* Adjust as needed */
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bus-routes{
+    background-color: rgba(0, 0, 0, 0.9); 
+    height: 100px;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 0.5%;
+    padding-left: 40px ;
+    padding-right: 40px ;
+    border-radius: 5px;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.base-det{
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.route-det{
+    margin-top: 20px;
+}
+.bus-time{
+    margin-left: 30vw;
+}
+.bus-booking > button{
+    margin-top: 0px;
+}
+.price{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+.route-det{
+    display: flex;
+    justify-content: space-between;
+}
+.departure, .to{
+    margin-right: 20px;
+}
+.arrival, .from{
+    margin-left: 20px;
+}
+/* Style the button */
+.buy-button {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Add a hover effect to the button */
+.buy-button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Add a shadow on hover */
+}
+/* Default link color */
+a {
+    color: #ccc;
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover state - Darken on hover */
+a:hover {
+    color: #888;
+}
+
+/* Active (click) state - Even darker on click */
+a:active {
+    color: #555;
 }

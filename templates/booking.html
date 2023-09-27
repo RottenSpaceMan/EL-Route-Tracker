@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/booking.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -39,62 +39,7 @@
 
     <div class="base">
         <div class="pane">
-            <div class="bus-container">
-                <div class="bus-routes">
-                    <span class="bus-details">
-                        <div class="base-det">
-                            <span class="bus-no">Bus ID - 12321-AR-VGH</span>
-                            <span class="bus-time">Estimated Time: 12HRS</span>
-                        </div>
-                        <hr>
-                        <div class="route-det">
-                            <div class="timings">
-                                <span class="departure">Departure: 09:00HRS</span>
-
-                                <span class="arrival">Arrival: 21:00HRS</span>
-                            </div>
-                            <div class="start-stop">
-                                <span class="to">From: BLR</span>
-
-                                <span class="from">To: BOM</span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="bus-booking">
-                        <div class="price">
-                            INR 1500
-                        </div>
-                        <button class="buy-button">Booknow</button>
-                    </span>
-                </div>
-                <div class="bus-routes">
-                    <span class="bus-details">
-                        <div class="base-det">
-                            <span class="bus-no">Bus ID - 32456-TR-BRM</span>
-                            <span class="bus-time">Estimated Time: 3HRS</span>
-                        </div>
-                        <hr>
-                        <div class="route-det">
-                            <div class="timings">
-                                <span class="departure">Departure: 09:00HRS</span>
-
-                                <span class="arrival">Arrival: 12:00HRS</span>
-                            </div>
-                            <div class="start-stop">
-                                <span class="to">From: TVM</span>
-
-                                <span class="from">To: COK</span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="bus-booking">
-                        <div class="price">
-                            INR 500
-                        </div>
-                        <button class="buy-button">Booknow</button>
-                    </span>
-                </div>
-            </div>
+            
             <p id="scroll-to-top" style="text-align: center;margin-top: -6%;"><a href="#"
                     style="text-align: center;">Scroll to Top</a></p>
         </div>
@@ -130,7 +75,7 @@
             &copy; 2023 Margg. All rights reserved.
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/booking.js') }}"></script>
 </body>
 
 </html>
