@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+</head>
+<body>
+    <h1>Result Page</h1>
+    <div id="resultMessage"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.0/socket.io.js"></script>
+    <script type="text/javascript">
+    var socket = io.connect('https://' + document.domain + ':' + location.port);
+
+        socket.on('show_popup', function (data) {
+            // Display a pop-up with the message received from the server
+            alert(data.message);
+        });
+    </script>
+</body>
+</html>
