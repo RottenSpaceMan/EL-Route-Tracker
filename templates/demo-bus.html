@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margg</title>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <h1>Enter Latitude and Longitude</h1>
+    <form>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude" placeholder="Enter Latitude" required><br><br>
+
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude" placeholder="Enter Longitude" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="{{ url_for('static', filename='js/demo-bus.js') }}"></script>
+</body>
+
+</html>

@@ -12,5 +12,9 @@ def index():
 def booking():
     return render_template('booking.html')
 
+@app.route('/demo-bus')
+def demobus():
+    return render_template('demo-bus.html')
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=8080, ssl_context=('cert.pem', 'key.pem'))

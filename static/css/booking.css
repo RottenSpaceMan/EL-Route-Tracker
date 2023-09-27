@@ -3,6 +3,10 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+#map { 
+    height: 60vw;
+    height: 50vh; 
+}
 .topbar {
     top: 0;
     left: 0;
@@ -36,7 +40,6 @@ nav {
     z-index: 1;
 }
 .pane {
-    position: absolute;
     height: 100vh;
     top: 0;
     left: 0;
@@ -56,3 +59,75 @@ a:hover {
 a:active {
     color: #555;
 }
+
+.container {
+    display: block; /* Use flexbox to create a horizontal layout */
+    height: 100vh;
+}
+
+.left-div {
+    flex: 1; /* Expand to take available space */
+    background-color: rgba(173, 216, 230, 0); /* Set background color for left div */
+    padding: 20px;
+}
+
+.right-div {
+    flex: 1; /* Expand to take available space */
+    color: #ffffff;
+    background-color: rgba(0, 0, 0,0.9); /* Set background color for right div */
+    padding: 20px;
+}
+.route {
+    margin-bottom: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between elements as needed */
+  }
+  
+  .To{
+    text-align: left;
+  }
+  .From {
+    text-align: right;
+  }
+  
+  .arrow {
+    text-align: center;
+  }
+  
+  .bus-tracking-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .left-section {
+    flex-grow: 1;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .location-box {
+    width: 100px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    background-color: #00c851; /* Example color for user location box */
+    margin-bottom: 10px;
+  }
+  
+  .alert-box {
+    width: 100px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    background-color: #6e3939; /* Example color for alert box */
+  }
+  
