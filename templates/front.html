@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margg</title>
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/front.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
 
 <body>
     <header>
@@ -18,7 +17,7 @@
             <span class="left">
                 <nav><a href="#"><img style="width: 5em;margin-bottom: -7px;"
                             src="{{ url_for('static', filename='img/white.png') }}"></a></nav>
-                <nav><a href="#about">About</a></nav>
+                <nav><a href="#about-section">About</a></nav>
             </span>
             <span class="right"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"
                     fill="none">
@@ -34,70 +33,32 @@
                 </svg></span>
         </span>
     </header>
-
     <div class="base">
-        <div class="ane">
-            <div class="bus-container">
-                <div class="bus-routes">
-                    <span class="bus-details">
-                        <div class="base-det">
-                            <span class="bus-no">Bus ID - 12321-AR-VGH</span>
-                            <span class="bus-time">Estimated Time: 3:30HRS</span>
-                        </div>
-                        <hr>
-                        <div class="route-det">
-                            <div class="timings">
-                                <span class="departure">Departure: 15:00HRS</span>
-
-                                <span class="arrival">Arrival: 18:30HRS</span>
-                            </div>
-                            <div class="start-stop">
-                                <span class="to">From: SLV</span>
-
-                                <span class="from">To: DHM</span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="bus-booking">
-                        <div class="price">
-                            INR 1500
-                        </div>
-                        <a href="/booking">
-                        <button class="buy-button">Booknow</button></a>
-                    </span>
-                </div>
-                <div class="bus-routes">
-                    <span class="bus-details">
-                        <div class="base-det">
-                            <span class="bus-no">Bus ID - 12321-AR-VGH</span>
-                            <span class="bus-time">Estimated Time: 99:30HRS</span>
-                        </div>
-                        <hr>
-                        <div class="route-det">
-                            <div class="timings">
-                                <span class="departure">Departure: 15:00HRS</span>
-
-                                <span class="arrival">Arrival: 18:30HRS</span>
-                            </div>
-                            <div class="start-stop">
-                                <span class="to">From: SLV</span>
-
-                                <span class="from">To: BOM</span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="bus-booking">
-                        <div class="price">
-                            INR 15000
-                        </div>
-                        <button class="buy-button">Booknow</button>
-                    </span>
-                </div>
-            </div>
-            <p id="scroll-to-top" style="text-align: center;margin-top: -6%;"><a href="#"
-                    style="text-align: center;">Scroll to Top</a></p>
+        <div class="center-content">
+            <img src="{{ url_for('static', filename='img/black.png') }}"><br>
+            <a href="/"><button>Explore</button></a>
         </div>
     </div>
+    <div class="about-section" id="about-section">
+        <h2>About Us</h2>
+        <p>
+            Bus tracking<br>
+
+Bus tracking mainly means that if you are waiting for your bus, and you wanted to check how long or how many more distance the bus has till it reaches your stop, you can use check in with the website and track the location of your bus in real time and see your necessary needs to an end.<br>
+
+Disaster Emergency Help<br>
+
+If by any chance the bus and it's passengers undergo a devastating turn of event during it's journey, then the sensor systems on the bus will automatically send help signals to authentic authority for rescue of it's passengers. The sensors will get activated upon any kinda of damage over a certain threshold to the bus and alert the authorities on time. To avoid false alerting signals from happening, the buses will undergo inspection on it's sensors and other mechanical equipments from being faulty.
+There are also a passenger self-alerting system provided inside the buses for incase of any medical or physical emergencies experienced by any of them during their ride. These alerts will also be sent to the authorities which will contact the staff in the buses to check what exactly the needs of those passengers are.<br>
+
+Cameras pointed inside and out<br>
+
+There are cctvs and black box systems inside each and every bus to ensure the safety of its passengers.<br><br><br><br><br><br><br><br><br>
+        </p>
+    </div>
+    <p id="scroll-to-top" style="text-align: center;margin-top: -6%;"><a href="#" style="text-align: center;">Scroll to
+            Top</a></p>
+    
 
     <footer style="background-color: black; color: white; padding: 20px;">
         <img style="width: 10em;" src="{{ url_for('static', filename='img/white.png') }}">
@@ -129,7 +90,6 @@
             &copy; 2023 Margg. All rights reserved.
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 
 </html>

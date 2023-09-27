@@ -35,19 +35,12 @@ nav {
     background-image: url('https://images.wallpaperscraft.com/image/single/mountains_mountain_range_peaks_149574_1280x720.jpg');
     background-size: cover;
     background-position: center;
+    background-color: rgba(0, 0, 0,0.9);
     margin: 0;
     padding: 0;
     z-index: 1;
 }
-.pane {
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); 
-    z-index: 0; 
-}
+
 a {
     color: #ccc;
     text-decoration: none; /* Remove underlines */

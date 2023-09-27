@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.topbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    z-index: 10;
+}
+.left nav {
+    display: inline;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+nav {
+    margin-right: 0px;
+}
+a {
+    color: #ccc;
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s; /* Smooth color transition */
+}
+a:hover {
+    color: #888;
+}
+a:active {
+    color: #555;
+}
+.base {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.wallpaperscraft.com/image/single/mountains_mountain_range_peaks_149574_1280x720.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0,0.9);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.center-content{
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.center-content > img{
+    margin-top: 10vh;
+}
+.center-content > a > button{
+    font-size: large;
+    color: white;
+    margin-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(0, 0, 0,0.9);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.buy-button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Add a shadow on hover */
+}
+.about-section{
+    background-color: black;
+    color: white;
+    padding: auto;
+    display: block;
+    padding: 5%;
+}
